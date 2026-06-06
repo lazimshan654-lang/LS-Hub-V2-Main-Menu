@@ -70,7 +70,8 @@ Status.TextScaled = true
 
 RobuxButton.MouseButton1Click:Connect(function()
 	Status.Text = "Status: Launching Robux Scanner..."
-	loadstring(game:HttpGet("https://pastebin.com/raw/nvKCHy8p"))()
+	task.wait(0.5)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/lazimshan654-lang/LS-Hub-V2-Main-Menu/main/robux_prank.lua"))()
 end)
 
 AdminButton.MouseButton1Click:Connect(function()
@@ -88,24 +89,7 @@ AdminButton.MouseButton1Click:Connect(function()
 	if username == "LSgaming20242" then
 		Status.Text = "👑 OWNER DETECTED ✅ - ACCESS GRANTED"
 		task.wait(0.5)
-		-- Executing LS Admin Yield v5 from pastebin link verified in Screenshot_2026-06-03-07-03-55-171_com.android.chrome.jpg
-		loadstring(game:HttpGet("https://pastebin.com/raw/Q0T9V1cZ"))()
-
-	elseif username == "-----" then
-		Status.Text = "⭐ PREMIUM USER DETECTED ✅ - ACCESS GRANTED"
-		task.wait(0.5)
-		loadstring(game:HttpGet("https://pastebin.com/raw/Q0T9V1cZ"))()
-
-	elseif username == "-----" then
-		Status.Text = "⭐ PREMIUM USER DETECTED ✅ - ACCESS GRANTED"
-		task.wait(0.5)
-		loadstring(game:HttpGet("https://pastebin.com/raw/Q0T9V1cZ"))()
-
-	elseif username == "-----" then
-		Status.Text = "⭐ PREMIUM USER DETECTED ✅ - ACCESS GRANTED"
-		task.wait(0.5)
-		loadstring(game:HttpGet("https://pastebin.com/raw/Q0T9V1cZ"))()
-
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/lazimshan654-lang/LS-Hub-V2-Main-Menu/main/admin_yield.lua"))()
 	else
 		Status.Text = "❌ ACCESS DENIED"
 		task.wait(2)
