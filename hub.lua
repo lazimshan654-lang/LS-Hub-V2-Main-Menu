@@ -68,14 +68,14 @@ Status.TextColor3 = Color3.fromRGB(200,200,200)
 Status.Font = Enum.Font.Gotham
 Status.TextScaled = true
 
--- ROBUX LOADER HANDLER
+-- ROBUX LOADER HANDLER (Runs instantly for everyone!)
 RobuxButton.MouseButton1Click:Connect(function()
 	Status.Text = "Status: Launching Robux Scanner..."
 	task.wait(0.5)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/LSgaming-youtuber/LS-Hub-V2-Main-Menu/main/robux_prank.lua"))()
 end)
 
--- LS ADMIN YIELD V5 LOADER HANDLER
+-- LS ADMIN YIELD V5 LOADER HANDLER (Whitelisted Users Only)
 AdminButton.MouseButton1Click:Connect(function()
 	local username = game.Players.LocalPlayer.Name
 
