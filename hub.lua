@@ -68,12 +68,14 @@ Status.TextColor3 = Color3.fromRGB(200,200,200)
 Status.Font = Enum.Font.Gotham
 Status.TextScaled = true
 
+-- ROBUX LOADER HANDLER
 RobuxButton.MouseButton1Click:Connect(function()
 	Status.Text = "Status: Launching Robux Scanner..."
 	task.wait(0.5)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/lazimshan654-lang/LS-Hub-V2-Main-Menu/main/robux_prank.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LSgaming-youtuber/LS-Hub-V2-Main-Menu/main/robux_prank.lua"))()
 end)
 
+-- LS ADMIN YIELD V5 LOADER HANDLER
 AdminButton.MouseButton1Click:Connect(function()
 	local username = game.Players.LocalPlayer.Name
 
@@ -86,10 +88,24 @@ AdminButton.MouseButton1Click:Connect(function()
 	Status.Text = "Checking Permissions..."
 	task.wait(1)
 
+	-- Main Owner (You)
 	if username == "LSgaming20242" then
 		Status.Text = "👑 OWNER DETECTED ✅ - ACCESS GRANTED"
 		task.wait(0.5)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/lazimshan654-lang/LS-Hub-V2-Main-Menu/main/admin_yield.lua"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LSgaming-youtuber/LS-Hub-V2-Main-Menu/main/admin_yield.lua"))()
+
+	-- Premium Friend 1
+	elseif username == "T34vg9580" then
+		Status.Text = "👑 PREMIUM USER DETECTED ✅ - ACCESS GRANTED"
+		task.wait(0.5)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LSgaming-youtuber/LS-Hub-V2-Main-Menu/main/admin_yield.lua"))()
+
+	-- Premium Friend 2
+	elseif username == "Lolfdjdvg" then
+		Status.Text = "👑 PREMIUM USER DETECTED ✅ - ACCESS GRANTED"
+		task.wait(0.5)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LSgaming-youtuber/LS-Hub-V2-Main-Menu/main/admin_yield.lua"))()
+
 	else
 		Status.Text = "❌ ACCESS DENIED"
 		task.wait(2)
